@@ -456,11 +456,18 @@
   padding: 20px;
 }
 
-.Titleh3{
+.Titleh2{
   font-size: 20px;
   color: var(--title-color);
   font-family: var(--body-font);
   padding: 25px;
+}
+
+.Titleh4{
+  font-size: 18px;
+  color: var(--title-color);
+  font-family: var(--body-font);
+  padding-left: 20px;
 }
 
 .paraffos{
