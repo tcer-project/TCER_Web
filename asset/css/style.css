@@ -913,3 +913,12 @@ a {
   font-size: 20px;
   padding: 25px;
 }
+
+.listado{
+	list-style: circle;
+	margin-inline: 25px;
+}
+
+.listado > li{
+	padding-block: 25px;
+}
