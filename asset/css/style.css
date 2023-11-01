@@ -374,13 +374,114 @@
   border-radius: 30px;
 }
 
+/*Card*/
+.titletext{
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.cards {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 468px;
+  margin-left: 32px;
+}
+
+.cards section.card:first-child {
+  margin-left: 0;
+}
+
+.cards section.card .icon i {
+  width: 100px;
+  height: 100px;
+}
+
+
+.cards section.card h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+.cards section.card p {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 100%;
+  margin-bottom: 16px;
+}
+
+.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px 0;
+}
+
+.cards section.card.contact button {
+  background: #494949;
+}
+.cards section.card.shop button {
+  background: #494949;
+}
+.cards section.card.about button {
+  background: #494949;
+}
+
+.cards section.card.contact {
+  box-shadow: 20px 20px 50px -30px #494949;
+}
+.cards section.card.shop {
+  box-shadow: 20px 20px 50px -30px #494949;
+}
+.cards section.card.about {
+  box-shadow: 20px 20px 50px -30px #494949;
+}
+
+@media screen and (max-width: 720px) {
+  .cards {
+      flex-direction: column;
+  }
+
+  .cards section.card {
+      margin-left: 0;
+      margin-bottom: 32px;
+  }
+
+  .cards section.card:last-child {
+      margin-bottom: 0;
+  }
+
+  .cards section.card button {
+      font-size: 70%;
+  }
+
+}
+
 /* Contacto */
 .contact-form{
   position: relative;
   min-height: 100vh;
   z-index: 0;
   background: var(--body-color);
-  padding: 30px;
+  padding: 100px;
   justify-content: center;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
@@ -478,7 +579,8 @@ textarea{
 .contai {
   max-width: 1200px;
   margin: auto;
-  padding: 1rem;
+  padding-top: 100px;
+  padding-bottom: 80px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
