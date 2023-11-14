@@ -1037,6 +1037,9 @@ a {
 }
 
 @media (max-width: 770px){
+  .contact-form{
+	  padding-inline: 25px;
+  }
   .contact-form .maine{
 	  flex-direction: column;
   }
